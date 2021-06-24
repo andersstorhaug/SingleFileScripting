@@ -27,6 +27,7 @@ var syntaxTree = SyntaxFactory.ParseSyntaxTree(
 
 diagnostics.AddRange(syntaxTree.GetDiagnostics());
 
+// https://github.com/dotnet/runtime/issues/36590#issuecomment-689883856
 static MetadataReference GetReference(Type type)
 {
     unsafe
